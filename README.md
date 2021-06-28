@@ -1,5 +1,7 @@
 # ScholAR
 
+![image](ScholAR.png)
+
 ## Note
 Web App is optimized for mobile. On iOS, AR will only work on Mozilla's XRViewer. On Android, app will require HTTPS.
 
