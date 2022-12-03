@@ -27,6 +27,7 @@ import "./styles.css";
 
 import ClassOptions from "./components/ClassOptions";
 import ARButton from "./components/CustomARButton";
+import Cylinder from "./components/Cylinder";
 
 // images
 // import homework from "./calc-homework.jpeg";
@@ -87,7 +88,9 @@ const Video = ({ play }) => {
     <mesh scale={size} position={[0, -0.05, -16]}>
       <planeBufferGeometry args={[0.25, 0.25]} />
       <meshBasicMaterial>
-        <videoTexture attach="map" args={[video]} />
+        {/* <videoTexture attach="map" args={[video]} /> */}
+        <Cylinder  position={[-1.2, 0, 0]}  />
+        {/* <div style={{backgroundColor: 'yellow', width: 500, height: 500}} /> */}
       </meshBasicMaterial>
     </mesh>
   );
@@ -196,7 +199,7 @@ const ClassHome = () => {
         fillOpacity={0}
         outlineWidth="2%"
       >
-        EENTRER DANS LA SALLE
+        ENTRER DANS LA SALLE
       </Text>
       {/* </animated.mesh> */}
 
