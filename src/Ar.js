@@ -85,15 +85,18 @@ const Video = ({ play }) => {
   }, [video, play]);
 
   return (
-    <mesh scale={size} position={[0, -0.05, -16]}>
-      <planeBufferGeometry args={[0.25, 0.25]} />
-      <meshBasicMaterial>
-        {/* <videoTexture attach="map" args={[video]} /> */}
-        <Cylinder  position={[-1.2, 0, 0]}  />
-        {/* <div style={{backgroundColor: 'yellow', width: 500, height: 500}} /> */}
-      </meshBasicMaterial>
-    </mesh>
-  );
+        <Cylinder scale={size}  position={[-1.2, 0, 0]}  />
+  )
+  // return (
+  //   <mesh scale={size} position={[0, -0.05, -16]}>
+  //     <planeBufferGeometry args={[0.25, 0.25]} />
+  //       {/* <Cylinder  position={[-1.2, 0, 0]}  /> */}
+  //     <meshBasicMaterial>
+  //       {/* <videoTexture attach="map" args={[video]} /> */}
+  //       {/* <div style={{backgroundColor: 'yellow', width: 500, height: 500}} /> */}
+  //     </meshBasicMaterial>
+  //   </mesh>
+  // );
 };
 
 const ClassHome = () => {
