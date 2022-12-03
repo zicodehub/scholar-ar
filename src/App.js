@@ -70,17 +70,19 @@ const Cards = () => {
       <Card
         img="./blue-school.png"
         width="35vw"
-        description="Experience school in an interactive augmented environment"
+        // description="Experience school in an interactive augmented environment"
+        description="L'école en réalité augmentée"
       />
       <Card
         img="./ar-symbol.png"
         width="32vw"
-        description="Uses state-of-the-art technology to render powerful virtual classroom"
+        // description="Uses state-of-the-art technology to render powerful virtual classroom"
+        description="La technologie pour virtualiser une classe"
       />
       <Card
         img="./cubes.png"
         width="32vw"
-        description="Boost learning by working with 3-dimensional lessons"
+        description="Immertion presque totale, pour mieux apprendre ! "
       />
 
       {/* </div> */}
@@ -112,7 +114,7 @@ const Home = () => {
           }}
         ></div>
         <h1 style={{ fontSize: 60 }}>
-          Schol<span style={{ color: "#DA0037" }}>AR</span>
+          Ecole<span style={{ color: "#DA0037" }}> 404</span>
         </h1>
         <p
           style={{
@@ -123,7 +125,7 @@ const Home = () => {
             margin: "0 auto",
           }}
         >
-          Immersive virtual learning at your fingertips
+          L'apprentissage immertifs au bout de vos doigts
         </p>
       </div>
 
@@ -136,7 +138,7 @@ const Home = () => {
           margin: "5vh 0",
         }}
       >
-        Virtual learning reimagined
+        L'apprentissage à distance réinventé
       </p>
       <Button
         type="primary"
@@ -157,7 +159,7 @@ const Home = () => {
           alignSelf: "center",
         }}
       >
-        Get Started
+        Commencer
       </Button>
     </div>
   );

@@ -47,7 +47,7 @@ class ARButton {
 
         await renderer.xr.setSession(session);
 
-        button.textContent = "STOP AR";
+        button.textContent = "ARRÊTER L'AR";
         sessionInit.domOverlay.root.style.display = "";
 
         currentSession = session;
@@ -56,7 +56,7 @@ class ARButton {
       function onSessionEnded(/*event*/) {
         currentSession.removeEventListener("end", onSessionEnded);
 
-        button.textContent = "ENTER AR";
+        button.textContent = "COMMENCER L'AR";
         sessionInit.domOverlay.root.style.display = "none";
 
         currentSession = null;
@@ -70,7 +70,7 @@ class ARButton {
       button.style.left = "calc(50% - 50px)";
       button.style.width = "100px";
 
-      button.textContent = "START AR";
+      button.textContent = "COMMENCER L'AR";
 
       button.onmouseenter = function () {
         button.style.opacity = "1.0";
@@ -107,7 +107,7 @@ class ARButton {
     function showARNotSupported() {
       disableButton();
 
-      button.textContent = "AR NOT SUPPORTED";
+      button.textContent = "AR NON PRIS EN CHARGE";
     }
 
     function stylizeElement(element) {

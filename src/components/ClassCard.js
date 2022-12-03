@@ -25,14 +25,14 @@ const ClassCard = ({
         <div style={{ fontSize: 18, marginTop: "6px" }}>
           <p style={{ fontSize: 20, fontWeight: "600" }}>{teacher}</p>
           {/* <br /> */}
-          {period} period
+          {period} période
           <br />
           {time}
           <div style={{ marginTop: "5px" }}>
             {inSession ? (
               <Blink
                 color="red"
-                text="Class in session"
+                text="En cours"
                 fontSize="21"
                 fontWeight="bold"
                 blinkTime={2}

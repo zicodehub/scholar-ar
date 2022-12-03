@@ -12,7 +12,7 @@ const ClassOptions = ({ forward }) => {
             <circleGeometry attach="geometry" args={[0.1, 30]} />
             <meshPhongMaterial attach="material" color={"orange"} />
             <Text fontSize={0.05} position={[0, 0.02, 0.03]} color="black">
-              Select
+              Cliquer
             </Text>
           </mesh>
         </Interactive>
@@ -21,7 +21,7 @@ const ClassOptions = ({ forward }) => {
             <circleGeometry attach="geometry" args={[0.1, 30]} />
             <meshPhongMaterial attach="material" color={"#F61153"} />
             <Text fontSize={0.05} position={[0, 0.02, 0.03]} color="black">
-              Select
+            Cliquer
             </Text>
           </mesh>
         </Interactive>
@@ -30,7 +30,7 @@ const ClassOptions = ({ forward }) => {
             <circleGeometry attach="geometry" args={[0.1, 30]} />
             <meshPhongMaterial attach="material" color={"#00CFFF"} />
             <Text fontSize={0.05} position={[0, 0.02, 0.03]} color="black">
-              Select
+            Cliquer
             </Text>
           </mesh>
         </Interactive>
@@ -39,7 +39,7 @@ const ClassOptions = ({ forward }) => {
             <circleGeometry attach="geometry" args={[0.1, 30]} />
             <meshPhongMaterial attach="material" color={"#FFCD00"} />
             <Text fontSize={0.05} position={[0, 0.02, 0.03]} color="black">
-              Select
+            Cliquer
             </Text>
           </mesh>
         </Interactive>
@@ -48,7 +48,7 @@ const ClassOptions = ({ forward }) => {
             <circleGeometry attach="geometry" args={[0.1, 30]} />
             <meshPhongMaterial attach="material" color={"#21DFBC"} />
             <Text fontSize={0.05} position={[0, 0.02, 0.03]} color="black">
-              Select
+            Cliquer
             </Text>
           </mesh>
         </Interactive>
@@ -63,8 +63,8 @@ const ClassOptions = ({ forward }) => {
           >
             <ClassCard
               color="orange"
-              className="AP Calculus AB"
-              teacher="Ms. Friedman"
+              className="Mathématiques"
+              teacher="Prof ABDON Atangana"
               period="1st"
               time="8:30 - 9:15"
               img="teacher1"
@@ -72,16 +72,16 @@ const ClassOptions = ({ forward }) => {
 
             <ClassCard
               color="#F61153"
-              className="Spanish II"
-              teacher="Ms. Chen"
+              className="Sciences biologiques"
+              teacher="M Roberge"
               period="2nd"
               time="9:30 - 10:15"
               img="teacher2"
             />
             <ClassCard
               color="#00CFFF"
-              className="Physics"
-              teacher="Mr. Stamos"
+              className="Physiques-Chimie"
+              teacher="M LOUKOU Stanislas"
               period="3rd"
               time="10:30 - 11:15"
               img="teacher3"
@@ -89,16 +89,16 @@ const ClassOptions = ({ forward }) => {
             />
             <ClassCard
               color="#FFCD00"
-              className="World History"
-              teacher="Ms. Thomas"
+              className="Histoire"
+              teacher="Mme GUGLIELMO MANGIAPANE"
               period="4th"
               time="11:30 - 12:15"
               img="teacher4"
             />
             <ClassCard
               color="#21DFBC"
-              className="English III"
-              teacher="Ms. Smith"
+              className="Anglais"
+              teacher="Mme SIDIBE"
               period="5th"
               time="12:30 - 1:15"
               img="teacher5"

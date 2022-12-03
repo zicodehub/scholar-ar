@@ -41,7 +41,7 @@ const Label = ({ color }) => {
       fontSize={0.04}
       anchorY="middle"
     >
-      Enter school
+      Entrer dans l'école
     </Text>
   );
 };
@@ -94,7 +94,7 @@ const Video = ({ play }) => {
 };
 
 const ClassHome = () => {
-  const texture = useTexture("calc-homework.jpeg");
+  const texture = useTexture("calc-homework.png");
   const [zoomed, setZoomed] = useState(false);
   const [doorOpen, setDoorOpen] = useState(false);
 
@@ -129,7 +129,7 @@ const ClassHome = () => {
           <boxBufferGeometry attach="geometry" args={[0.4, 0.1, 0.05]} />
           <meshPhongMaterial attach="material" color={"black"} />
           <Text position={[0, 0, 0.06]} fontSize={0.05}>
-            Assignments
+            Devoirs
           </Text>
         </mesh>
         <Interactive onSelect={() => setZoomed(!zoomed)}>
@@ -153,14 +153,14 @@ const ClassHome = () => {
             <p
               style={{ textAlign: "center", fontWeight: "bold", fontSize: 21 }}
             >
-              Agenda:
+              Travail à faire:
             </p>
             {/* TODO: Add cursive font to agenda */}
             <div style={{ paddingLeft: "10px", paddingRight: "10px" }}>
               <p style={{ lineHeight: "120%" }}>
-                • Go over homework from last night
-                <br />• Work on class project
-                <br />• Get started on today's homework
+                • Faire les exercices de Maths 1 à 3
+                <br />• Lire les 30 première du roman étudié
+                <br />• Balayer la salle
               </p>
               {/* <p></p>
               <p></p> */}
@@ -196,7 +196,7 @@ const ClassHome = () => {
         fillOpacity={0}
         outlineWidth="2%"
       >
-        ENTER ROOM
+        EENTRER DANS LA SALLE
       </Text>
       {/* </animated.mesh> */}
 
@@ -226,7 +226,7 @@ const Scene = () => {
         <Suspense
           fallback={
             <Text fontSize={0.03} position={[0, 0, -0.5]}>
-              Loading
+              Chargement
             </Text>
           }
         >
