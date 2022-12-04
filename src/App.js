@@ -12,12 +12,16 @@ import AR from "./Ar";
 import "./App.css";
 import "antd/dist/antd.css";
 
+import bgImage from "./bgImage/bg.jpg";
+import bg from "./bgImage/19545.jpg";
+
+
 const Card = ({ img, width, description }) => {
   return (
     <div
       style={{
-        width: "60vw",
-        height: "70vw",
+        width: "10vw",
+        height: "10vw",
         padding: "0 10vw",
         borderRadius: "5px",
         boxShadow: "0px 11px 5px 0px rgba(0,0,0,0.15)",
@@ -56,8 +60,8 @@ const Cards = () => {
       style={{
         marginTop: "5vh",
         display: "flex",
-        overflow: "scroll",
-        height: "75vw",
+        //overflow: "scroll",
+        // height: "75vw",
         scrollbarWidth: "none",
         // width: "102vw",
         // overflowX: "auto",
@@ -67,23 +71,22 @@ const Cards = () => {
       }}
     >
       {/* <div style={{ width: "100vw", display: "flex" }}> */}
-      <Card
+      {/* <Card
         img="./blue-school.png"
-        width="35vw"
-        // description="Experience school in an interactive augmented environment"
-        description="L'école en réalité augmentée"
-      />
-      <Card
+        width="25vw"
+        height="10vw"
+        description="Stimuler l'apprentissage en travaillant avec des leçons en 3 dimensions"
+      /> */}
+      {/* <Card
         img="./ar-symbol.png"
         width="32vw"
-        // description="Uses state-of-the-art technology to render powerful virtual classroom"
-        description="La technologie pour virtualiser une classe"
-      />
-      <Card
+        description="Uses state-of-the-art technology to render powerful virtual classroom"
+      /> */}
+      {/* <Card
         img="./cubes.png"
         width="32vw"
-        description="Immertion presque totale, pour mieux apprendre ! "
-      />
+        description="Boost learning by working with 3-dimensional lessons"
+      /> */}
 
       {/* </div> */}
     </div>
@@ -95,13 +98,17 @@ const Home = () => {
   return (
     <div
       style={{
-        // height: "100%",
+        height: "100%",
         width: "100%",
-        paddingBottom: "15px",
+        //paddingBottom: "15px",
+        backgroundImage: `url(${bg})`,
+        backgroundSize: 'cover',
+        fontSize:'100%',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       <div style={{ textAlign: "center" }}>
-        <div
+        {/* <div
           style={{
             height: "60vw",
             width: "60vw",
@@ -112,21 +119,11 @@ const Home = () => {
             top: "-10vh",
             left: "-20vw",
           }}
-        ></div>
-        <h1 style={{ fontSize: 60 }}>
-          Ecole<span style={{ color: "#DA0037" }}> 404</span>
+        ></div> */}
+        <h1 style={{ fontSize: 60,color: "#FFFFFF"}}>
+          404 Ecole<span style={{ color: "#DA0037" }}>AR</span>
         </h1>
-        <p
-          style={{
-            fontWeight: "300",
-            maxWidth: "55vw",
-            fontSize: 18,
-            alignSelf: "center",
-            margin: "0 auto",
-          }}
-        >
-          L'apprentissage immertifs au bout de vos doigts
-        </p>
+
       </div>
 
       <Cards />
@@ -138,7 +135,7 @@ const Home = () => {
           margin: "5vh 0",
         }}
       >
-        L'apprentissage à distance réinventé
+        L'apprentissage virtuel repensé
       </p>
       <Button
         type="primary"
@@ -152,14 +149,14 @@ const Home = () => {
           fontWeight: "bolder",
           fontSize: 25,
           height: "90px",
-          width: "250px",
+          width: "320px",
           borderRadius: "50px",
           margin: "15px auto 20px auto",
           marginBottom: "20px",
           alignSelf: "center",
         }}
       >
-        Commencer
+        Debutez 404 School Ar
       </Button>
     </div>
   );
